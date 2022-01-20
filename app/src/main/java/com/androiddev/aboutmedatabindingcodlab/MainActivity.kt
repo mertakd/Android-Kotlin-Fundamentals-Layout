@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun addNickname(view: View) {
+    private fun addNickname(view: View) { //apply ile binding yazmamıza gerek kalmaz
         binding. apply {
             myName?.nickname = nicknameEdit.text.toString()
             invalidateAll() //bu yapıyı değiştirdek sonra UI ı güncelle refresh et
